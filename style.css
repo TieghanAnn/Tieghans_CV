@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Global Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  h2.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  h3.qoute {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Navigation and Contact Section */
+  nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  nav h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* About Section */
+  h2, h3, h4.sub-head {
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  h3.qoute {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  /* Skills Section */
+  .skills {
+    margin-top: 30px;
+  }
+  
+  .skills h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #2d2d2d;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  
+  /* Experience and Education Section */
+  .experience, .education, .certifications {
+    margin-top: 40px;
+  }
+  
+  .experience h3, .education h3, .certifications h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .experience h4, .education h4, .certifications h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .experience ul, .education ul, .certifications ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Layout for Columns */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .left-column {
+    width: 48%;
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .right-column {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .left-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+    }
+  }
+  
