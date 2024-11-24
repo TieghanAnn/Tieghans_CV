@@ -11,46 +11,73 @@ body {
     background-color: #f4f4f4;
     color: #333333;
     line-height: 1.6;
-    padding: 20px;
-    border-color: #0b0b0b;
+}
+
+/* Page Border */
+.border-body {
+    border: 5px solid #000000;
+    background-color: #f4f4f4; 
 }
 
 /* Header Section */
 header {
     display: flex;
-    background-color: #0b0b0b; /* Light grey background */
-    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    text-align: center;
+    background-color: #0b0b0b; 
+    padding: 30px 0; 
     color: #f4f4f4;
+    margin: 0; 
+    border-top: 5px solid #000000; 
+    border-left: 5px solid #000000; 
+    border-right: 5px solid #000000; 
 }
 
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; 
+}
+
+/* Section Headings */
+.contact h2, .about h2, .skills h2,
+.experience h2, .education h2, .certifications h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    padding: 10px 20px;
+    background-color: #e4e1e1; 
+    color: #333;
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+/* CV Image */
 .CVimg {
     width: 150px;
     height: 160px;
     border-radius: 80%;
     border: 3px solid #f8f8f8;
-    margin-right: 20px; /* Space between image and text */
+    margin-bottom: 15px; 
 }
 
+/* Name and Quote */
 .name {
     font-size: 1.6rem;
     font-weight: bold;
     color: #fffdfd;
-    margin-bottom: 5px;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
 .quote {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-style: italic;
     color: #eae4e4;
-}
-
-/* Main Content Section (two columns) */
-main {
-    display: flex;
-    justify-content: space-between;
+    font-family: 'Georgia', serif; 
 }
 
 /* Left Column (smaller) */
@@ -62,51 +89,50 @@ main {
 .left-column h2 {
     font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
+    margin-top: 7%;
 }
 
-.left-column ul {
-    list-style-type: none;
-    padding: 0;
+/* Skills Section - Bullet Points */
+.skills ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin-top: 5%;
+    
 }
 
 .left-column ul li {
     font-size: 1rem;
     margin-bottom: 8px;
+    margin-top: 5%;
 }
 
 /* Right Column (larger) */
 .right-column {
     flex: 2;
     background-color: white;
-    padding: 20px;
+    padding: 30px; 
+    margin-left: 20px; 
 }
 
-.right-column h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
+/* Added space between sections in right column */
 .right-column .section {
-    margin-bottom: 20px;
+    padding: 20px; 
+    margin-bottom: 30px; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
 }
 
-.right-column .section h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
+/* Added Spacing Between Paragraphs */
 .right-column .section p {
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px; 
+    line-height: 1.8; 
 }
 
-/* Contact, About, and Skills sections styling */
-.contact, .about, .skills {
-    margin-bottom: 20px;
-    font-size: 15px;
+/* Spacing Between Sections (Contact, About, Skills, etc.) */
+.contact, .about, .skills, .experience, .education, .certifications {
+    margin-bottom: 30px; 
 }
 
 /* Footer Section */
@@ -115,7 +141,8 @@ footer {
     text-align: center;
 }
 
-section{
+/* Section Styling */
+section {
     margin-left: 10%;
     font-size: 15px;
 }
